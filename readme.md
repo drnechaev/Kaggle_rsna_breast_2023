@@ -15,8 +15,7 @@ Model:
 
 Model:
                                                                             
-input1 > repeat(3) > ConvNextV2 > GlobalAveragePooling2D > concancancenate >  dense (in_dim * 4, elu) > dense (in_dim, relu) > add > LayerNormalize > Dense
-                                                     input2  -^         |-------------------------------------------------------^
-
+input1 > repeat(3) > ConvNextV2 > GlobalAveragePooling2D > concacenate with input2 >  dense (in_dim * 4, elu) > dense (in_dim, relu) > add to concanlayer > LayerNormalize > Dense
+                                                     
 <h1>rsna-1imp-tpu-train</h1>
 Loading trainded model and test
