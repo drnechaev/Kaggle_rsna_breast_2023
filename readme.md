@@ -14,8 +14,7 @@ Model:
     2: age and implant flag
 
 Model:
-                                                                            
-input1 > repeat(3) > ConvNextV2 > GlobalAveragePooling2D > concacenate with input2 >  dense (in_dim * 4, elu) > dense (in_dim, relu) > add to concanlayer > LayerNormalize > Dense
+<img src='https://github.com/drnechaev/Kaggle_rsna_breast_2023/blob/main/Model.png' alt='model'/>
                                                      
 <h1>rsna-1imp-tpu-train</h1>
 Loading trainded model and test
